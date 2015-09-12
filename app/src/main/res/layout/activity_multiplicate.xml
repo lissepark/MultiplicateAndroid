@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MultiplicateActivity"
+                android:background="#be8bd9"
+    >
+
+    <TextView
+        android:text="@string/name_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="11pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textColor="#175ba8"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/multab"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="PLAY"
+        android:id="@+id/buttonStartPlay"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Scores"
+        android:id="@+id/button2"
+        android:layout_below="@+id/buttonStartPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Quit"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="15dp"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TableRow>
+
+</RelativeLayout>
